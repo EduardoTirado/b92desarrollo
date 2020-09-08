@@ -62,7 +62,7 @@ class CrmPhonecall2phonecall(models.TransientModel):
             self.name,
             self.user_id.id,
             self.team_id.id or False,
-            self.tag_ids.ids,
+            self.tag_ids,
             action=self.action,
             return_recordset=True
         )
